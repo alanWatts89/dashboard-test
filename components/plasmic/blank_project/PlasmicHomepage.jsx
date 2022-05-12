@@ -9,6 +9,7 @@
 // Plasmic Project: iDrqmUdQP7zpZncXuMwzX5
 // Component: 4_G_bUJWQioD
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -19,7 +20,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: iDrqmUdQP7zpZncXuMwzX5/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 4_G_bUJWQioD/css
 import VectorIcon from "./icons/PlasmicIcon__Vector"; // plasmic-import: noBazM8K9o3/icon
-import Vector2Icon from "./icons/PlasmicIcon__Vector2"; // plasmic-import: vy6oohth4ZP/icon
 import Line2Icon from "./icons/PlasmicIcon__Line2"; // plasmic-import: fL_vqOgHXMV/icon
 import Vector3Icon from "./icons/PlasmicIcon__Vector3"; // plasmic-import: dWF_kTxjAwQ/icon
 import Vector4Icon from "./icons/PlasmicIcon__Vector4"; // plasmic-import: tT1SvyjnheK/icon
@@ -37,6 +37,7 @@ import Ellipse11Icon from "./icons/PlasmicIcon__Ellipse11"; // plasmic-import: P
 import Ellipse13Icon from "./icons/PlasmicIcon__Ellipse13"; // plasmic-import: M15dzPg-4fA/icon
 import Ellipse12Icon from "./icons/PlasmicIcon__Ellipse12"; // plasmic-import: 2VG_iUl_Jfz/icon
 import Ellipse14Icon from "./icons/PlasmicIcon__Ellipse14"; // plasmic-import: kUH5TCdbCPs/icon
+import Vector2Icon from "./icons/PlasmicIcon__Vector2"; // plasmic-import: vy6oohth4ZP/icon
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -107,42 +108,25 @@ function PlasmicHomepage__RenderFunc(props) {
               {"Internet Marketer, CEO"}
             </div>
 
-            <div
+            <h6
+              data-plasmic-name={"h6"}
+              data-plasmic-override={overrides.h6}
               className={classNames(
                 projectcss.all,
+                projectcss.h6,
                 projectcss.__wab_text,
-                sty.text__fd5Km
+                sty.h6
               )}
+              onKeyPress={""}
             >
               {"Website"}
-            </div>
+            </h6>
 
             <div
               data-plasmic-name={"group62"}
               data-plasmic-override={overrides.group62}
               className={classNames(projectcss.all, sty.group62)}
-            >
-              <div
-                data-plasmic-name={"rectangle84"}
-                data-plasmic-override={overrides.rectangle84}
-                className={classNames(projectcss.all, sty.rectangle84)}
-              />
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__sna3R
-                )}
-              >
-                {"https://johndrossos.eu"}
-              </div>
-
-              <Vector2Icon
-                className={classNames(projectcss.all, sty.svg__pFGP)}
-                role={"img"}
-              />
-            </div>
+            />
 
             <Line2Icon
               className={classNames(projectcss.all, sty.svg__aBswS)}
@@ -186,28 +170,51 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.text__sugr
               )}
             >
-              {"Results were not as expected, visit console helper"}
+              <React.Fragment>
+                <React.Fragment>
+                  {"Results were not as expected, visit "}
+                </React.Fragment>
+                <p.PlasmicLink
+                  data-plasmic-name={"link"}
+                  data-plasmic-override={overrides.link}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    projectcss.plasmic_default__inline,
+                    sty.link
+                  )}
+                  component={Link}
+                  href={"dccz.com"}
+                  platform={"nextjs"}
+                >
+                  {"console helper"}
+                </p.PlasmicLink>
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
             </div>
 
-            <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
-              alt={""}
-              className={classNames(sty.img)}
-              displayHeight={"341.731px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"415.115px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/blank_project/images/group85.svg",
-                fullWidth: 415.115,
-                fullHeight: 341.731,
-                aspectRatio: 1.216374
-              }}
-            />
+            {true ? (
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"365px"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blank_project/images/group85.svg",
+                  fullWidth: 415.115,
+                  fullHeight: 341.731,
+                  aspectRatio: 1.216374
+                }}
+              />
+            ) : null}
 
             <div
               data-plasmic-name={"group87"}
@@ -676,6 +683,35 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.svg___5YINf)}
               role={"img"}
             />
+
+            {true ? (
+              <div
+                data-plasmic-name={"freeBox"}
+                data-plasmic-override={overrides.freeBox}
+                className={classNames(projectcss.all, sty.freeBox)}
+              >
+                <div
+                  data-plasmic-name={"rectangle84"}
+                  data-plasmic-override={overrides.rectangle84}
+                  className={classNames(projectcss.all, sty.rectangle84)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__sna3R
+                    )}
+                  >
+                    {"https://johndrossos.eu"}
+                  </div>
+
+                  <Vector2Icon
+                    className={classNames(projectcss.all, sty.svg__pFGP)}
+                    role={"img"}
+                  />
+                </div>
+              </div>
+            ) : null}
           </div>
         </p.Stack>
       </div>
@@ -688,8 +724,9 @@ const PlasmicDescendants = {
     "root",
     "dashboard",
     "repeatGrid11",
+    "h6",
     "group62",
-    "rectangle84",
+    "link",
     "img",
     "group87",
     "rectangle147",
@@ -721,14 +758,17 @@ const PlasmicDescendants = {
     "line6",
     "group88",
     "rectangle13",
-    "line7"
+    "line7",
+    "freeBox",
+    "rectangle84"
   ],
 
   dashboard: [
     "dashboard",
     "repeatGrid11",
+    "h6",
     "group62",
-    "rectangle84",
+    "link",
     "img",
     "group87",
     "rectangle147",
@@ -760,12 +800,15 @@ const PlasmicDescendants = {
     "line6",
     "group88",
     "rectangle13",
-    "line7"
+    "line7",
+    "freeBox",
+    "rectangle84"
   ],
 
   repeatGrid11: ["repeatGrid11"],
-  group62: ["group62", "rectangle84"],
-  rectangle84: ["rectangle84"],
+  h6: ["h6"],
+  group62: ["group62"],
+  link: ["link"],
   img: ["img"],
   group87: [
     "group87",
@@ -811,7 +854,9 @@ const PlasmicDescendants = {
   line6: ["line6"],
   group88: ["group88", "rectangle13", "line7"],
   rectangle13: ["rectangle13"],
-  line7: ["line7"]
+  line7: ["line7"],
+  freeBox: ["freeBox", "rectangle84"],
+  rectangle84: ["rectangle84"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -845,8 +890,9 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     dashboard: makeNodeComponent("dashboard"),
     repeatGrid11: makeNodeComponent("repeatGrid11"),
+    h6: makeNodeComponent("h6"),
     group62: makeNodeComponent("group62"),
-    rectangle84: makeNodeComponent("rectangle84"),
+    link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     group87: makeNodeComponent("group87"),
     rectangle147: makeNodeComponent("rectangle147"),
@@ -879,6 +925,8 @@ export const PlasmicHomepage = Object.assign(
     group88: makeNodeComponent("group88"),
     rectangle13: makeNodeComponent("rectangle13"),
     line7: makeNodeComponent("line7"),
+    freeBox: makeNodeComponent("freeBox"),
+    rectangle84: makeNodeComponent("rectangle84"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps
